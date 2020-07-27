@@ -4,6 +4,11 @@
 		<span class="menu__btn-title" tabindex="-1">{{ T "menu_label" }}</span>
 	</button>
 	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://ryan-schachte.com">
+				<span class="menu__text">Home</span>
+			</a>
+		</li>
 		{{- $currentNode := . }}
 		{{- range .Site.Menus.main }}
 		{{- if .Name }}
@@ -16,6 +21,16 @@
 		</li>
 		{{- end }}
 		{{- end }}
+		<li class="menu__item">
+			<a class="menu__link" href="https://youtube.com/thesimpleengineer" target="_blank">
+				<span class="menu__text">Youtube</span>
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://linkedin.com/in/schachte" target="_blank">
+				<span class="menu__text">Linkedin</span>
+			</a>
+		</li>
 	</ul>
 </nav>
 {{ else -}}

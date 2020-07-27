@@ -1,4 +1,52 @@
 baseURL = "https://schachte.github.io"
+title = "Ryan Schachte"
 languageCode = "en-us"
-title = "My New Hugo Site"
+paginate = "5" # Number of posts per page
 theme = "mainroad"
+
+[Author] # Used in authorbox
+  name = "Ryan Schachte"
+  bio = "Ryan Schachte runs The Simple Engineer Youtube channel and works as a software engineer at Nordstrom Technology. He's an avid learner, educator and runner."
+  avatar = "img/avatar.png"
+
+[Params]
+  subtitle = "" # Deprecated in favor of .Site.Params.logo.subtitle
+  description = "Ryan Schachte's random ponderings" # Site description. Used in meta description
+  copyright = "Ryan Schachte" # Footer copyright holder, otherwise will use site title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = false # Enable Twitter Cards if true
+  readmore = true # Show "Read more" button in list if true
+  authorbox = true # Show authorbox at bottom of pages if true
+  toc = false # Enable Table of Contents
+  pager = true # Show pager navigation (prev/next links) at the bottom of pages if true
+  post_meta = ["author", "date", "categories", "translations"] # Order of post meta information
+  mainSections = ["post"] # Specify section pages to show on home page and the "Recent articles" widget
+  dateformat = "01-02-2006" # Change the format of dates
+  mathjax = true # Enable MathJax
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config
+  highlightColor = "#303952" # Override highlight color
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+
+[Params.logo]
+# image = "img/placeholder.png" # Logo image. Path relative to "static"
+  title = "Ryan Schachte" # Logo title, otherwise will use site title
+  subtitle = "Random thoughts & teachings" # Logo subtitle
+
+[Params.sidebar]
+  home = "right" # Configure layout for home page
+  list = "left"  # Configure layout for list pages
+  single = false # Configure layout for single pages
+  widgets = ["recent", "categories", "taglist", "social", "languages"]
+
+[Params.widgets]
+  recent_num = 5 # Set the number of articles in the "Recent articles" widget
+  tags_counter = false # Enable counter for each tag in "Tags" widget
+
+[Params.widgets.social]
+  # Enable parts of social widget
+  twitter = "TheSimpEngineer"
+  linkedin = "schachte"
+  github = "schachte"
